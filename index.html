@@ -10,15 +10,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <img src="img/vite.svg" alt="">
+      <div class="container header__container">
+        <div class="header__logo">
+          <img src="img/vite.svg" alt="">
+        </div>
+        <input type="checkbox" id="burger__checkbox" class="burger__checkbox">
+        <label class="burger" for="burger__checkbox"></label>
       </div>
-      <input type="checkbox" id="burger__checkbox" class="burger__checkbox">
-      <label class="burger" for="burger__checkbox"></label>
+      
     </header>
 
     <main class="main">
       <div class="container main__container">
+        <div class="menu__overlay"></div>
         <nav class="menu">
           <ul class="menu__items">
             <li class="menu__item"><a href="#" class="menu__item_link">Главная</a></li>
@@ -95,7 +99,9 @@
     </main>
 
     <footer class="footer">
-
+      <div class="container">
+        <button class="footer__btn">Нажмите на меня!</button>
+      </div>
     </footer>
     
     <script type="module" src="/main.js"></script>
