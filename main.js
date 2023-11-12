@@ -1,13 +1,11 @@
 import 'normalize.css'
 import './style.scss'
-
-// import { changeLanguage } from './components/changeLanguage';
 import { burgerMenu } from './components/burgerMenu';
-
+import { modal } from './components/modal';
 
 const init = () => {
-  //changeLanguage();
   burgerMenu();
+  modal();
 }
 
 init()

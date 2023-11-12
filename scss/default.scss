@@ -10,9 +10,12 @@ html {
 }
 
 :root {
-	--black: #000;
+  --black: #000;
   --bg: #eee;
   --white: #fff;
+  --secondary: #6f7ebc;
+  --primary: #007fff;
+  --text: #212121;
 }
 
 body {
@@ -28,10 +31,11 @@ body {
   color: var(--black);
   background-color: var(--white);
   line-height: 1.2;
-  
+
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
@@ -76,6 +80,7 @@ iframe {
 .no-mobile {
   display: none;
 }
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -91,25 +96,25 @@ iframe {
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 
-  @media (max-width: 580px) {
-  }
+  @media (max-width: 580px) {}
 
 }
 
 .no__mobile {
-    display: block ;
+  display: block;
 }
 
 .in__mobile {
-    display: none !important;
+  display: none !important;
 }
 
 @media (max-width: 580px) {
   .in__mobile {
     display: flex !important;
   }
+
   .no__mobile {
     display: none !important;
   }
